@@ -1,0 +1,46 @@
+/* eslint-env node */
+/* eslint import/no-nodejs-modules:0 */
+
+const process = require("process");
+
+const isRelaxed = !!true;
+const isCi = !!process.env.CI;
+
+// Strict ruleset that runs on pre-commit and in local environments
+const ADDITIONAL_HOOKS_TO_CHECK_DEPS_FOR =
+  "(useEffectAfterFirstRender|useMemoWithPrevious)";
+
+const strictRulesNotCi = {
+  "react-hooks/exhaustive-deps": [
+    "error",
+    { additionalHooks: ADDITIONAL_HOOKS_TO_CHECK_DEPS_FOR },
+  ],
+};
+
+module.exports = {
+  extends: [isRelaxed ? "sentry-app" : "sentry-app/strict"],
+  globals: {
+    require: false,
+    expect: false,
+    sinon: false,
+    MockApiClient: true,
+    TestStubs: true,
+    tick: true,
+    jest: true,
+  },
+
+  rules: {
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      { additionalHooks: ADDITIONAL_HOOKS_TO_CHECK_DEPS_FOR },
+    ],
+    ...(!isRelaxed && !isCi ? strictRulesNotCi : {}),
+  },
+
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx"],
+      rules: {},
+    },
+  ],
+};
