@@ -88,6 +88,9 @@ You can directly store the provided JSON files on your backend, but there are bo
 ### Delivery Instructions
 ---
 Follow the below instructions for your submission :
+
+**Don't create a fork, send us the link to your repository and make sure to make it private.**
+
 - Please send your submission to this form: [link](https://airtable.com/shrqTib6f8G15e0UE)
 - Reply to the email with the assignment/link/attachments/ submission.
 - Create a private repository on Github and add the following accounts as collaborators :
