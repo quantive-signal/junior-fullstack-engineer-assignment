@@ -2,7 +2,7 @@
 ### Interface + API application (Insight Card)
 ---
 **IMPORTANT** : We will consider exclusively the quality of your project (technology and product-wise) to evaluate your work. We've added a project structure in this repository (a build with react, reflux, typescript, webpack, babel config etc) to save you time. Feel free to use it. The app will also have its own separate login mechanism based on a username and password. Go through the details clearly. You have        **7 days** to submit the assigned task. We of course want you to solve the problem, but are equally interested to see how you solve it - the quality of your approach & code!
-In case of any questions, send a mail to nidhi@gtmhub.com
+In case of any questions, send a mail to nidhi@quantive.com
 
 Quantive Signals monitors your KPIs and intelligently collects your data, identifies anomalies, identifies factors that create unexpected changes, generates alerts and insights of when, what, and why something happens.
 
