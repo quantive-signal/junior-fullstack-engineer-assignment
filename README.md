@@ -1,6 +1,7 @@
 # Take Home Assignment - Junior Full Stack 
 ### Interface + API application (Insight Card)
 ---
+### Use the base code that was provided in this repo. Assignments lacking the aforementioned code will be denied right away. The technical interview will centre on the candidate's comprehension of the above code.
 **IMPORTANT** : We will consider exclusively the quality of your project (technology and product-wise) to evaluate your work. We've added a project structure in this repository (a build with react, reflux, typescript, webpack, babel config etc) to save you time. Feel free to use it. The app will also have its own separate login mechanism based on a username and password. Go through the details clearly. You have        **7 days** to submit the assigned task. We of course want you to solve the problem, but are equally interested to see how you solve it - the quality of your approach & code!
 In case of any questions, send a mail to nidhi@quantive.com
 
